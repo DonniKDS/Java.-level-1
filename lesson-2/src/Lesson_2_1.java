@@ -64,18 +64,22 @@ public class Lesson_2_1 {
         }
         // продолжил задание
         int max = nums5[0];
+        int indexMax = 0;
         int min = nums5[0];
+        int indexMin = 0;
         for (int i = 0; i < nums5.length; i++){
             if (max < nums5[i]){
                 max = nums5[i];
+                indexMax = i;
             }
             if (min > nums5[i]){
                 min = nums5[i];
+                indexMax = i;
             }
         }
         // закомментирую вывод, чтобы не мешал проверке остальных пунктов
-//        System.out.println("Максимальное число = " + max + ".");
-//        System.out.println("Минимальное число = " + min + ".");
+//        System.out.println("Максимальное число = " + max + ". Его индекс - " + indexMax + ".");
+//        System.out.println("Минимальное число = " + min + ". Его индекс - " + indexMin + ".");
 
         // сам массив, для наглядности
 //        for(Integer num : nums5){
